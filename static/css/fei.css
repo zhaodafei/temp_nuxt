@@ -1,0 +1,8 @@
+.red-fei{
+  color: #ff6b81;
+}
+
+.red-fei:after {
+  content: '我是全局样式';
+  color: #dda0dd;
+}
