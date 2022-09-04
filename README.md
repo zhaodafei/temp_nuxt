@@ -19,6 +19,24 @@ $ yarn generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
+## 项目介绍
+
+路由访问页面
+
+```html
+#查询模块
+http://localhost:3000/user
+http://localhost:3000/user/list
+
+#子路由
+http://localhost:3000/book/aaa
+http://localhost:3000/book/bbb
+```
+
+在webstorm中,设置中吧`webpack`指向`webapck.config.js`,然后代码中`~和@`就可以跳转了
+
+
+
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
@@ -68,17 +86,7 @@ This directory contains your Vuex store files. Creating a file in this directory
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
 
-## 项目介绍
 
-路由访问页面
-
-```html
-#查询模块
-http://localhost:3000/search
-http://localhost:3000/search/list
-
-
-```
 
 
 
