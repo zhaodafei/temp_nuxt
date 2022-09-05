@@ -17,6 +17,7 @@ export default {
   css: [
       '~/static/css/fei.css'
   ],
+  loading: false,
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -37,7 +38,9 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    'cookie-universal-nuxt',
+    // ['cookie-universal-nuxt', { parseJSON: true }],
   ],
   axios: {
     proxy: true
@@ -51,9 +54,15 @@ export default {
       }
     }
   },
+  // 打包上线后需要使用的端口 ------------------
   // server: {
   //   port: 9070,
   //   host: '0.0.0.0'
+  // },
+  // 环境变量 ------------------------
+  // env: {
+  //   NODE_ENVS: process.env.NODE_ENVS,
+  //   NODE_ENV: process.env.NODE_ENVS === 'DEV' ? 'development' : 'production'
   // },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
